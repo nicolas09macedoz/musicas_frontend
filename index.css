@@ -110,3 +110,83 @@ main {
     background-color: #d92d20;
     color: #ffffff;
 }
+
+#lista-musicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+
+.card-musica {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.card-musica:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+
+.titulo-musica {
+    font-size: 1.2rem;
+    color: #1a202c;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+}
+
+.artista-musica {
+    font-size: 0.95rem;
+    color: #718096;
+    margin: 0 0 16px 0;
+}
+
+.tags-musica {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+
+.badge {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+
+.badge.genero {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.botao-editar {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4f46e5;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: auto;
+    transition: background-color 0.2s ease;
+}
+.botao-editar:hover {
+    background-color: #4338ca;
+}
